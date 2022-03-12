@@ -6,4 +6,4 @@ class RefreshTokenBase(BaseModel):
 
 
 class RefreshTokenOpen():
-
+    pass
