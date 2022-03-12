@@ -1,0 +1,5 @@
+{
+  "secret_key": "",
+  "algorithm": "",
+  "access_token_exprire_minutes": 30
+}
