@@ -10,9 +10,73 @@ FastAPI를 활용하여서 회원 기능을 구현한 점을 직접 사용합니
 - ORM : SQLAlchemy 1.4
 - HTTP API
 
-
 ---
 
 ## 비즈니스 설계
 
-회원 기능을 구현하는 API를 개발함
+회원 기능의 핵심
+
+---
+
+## DB 설계
+
+회원 데이터에 있는 부분
+
+### Account
+<table>
+  <th>Name</th>
+  <th>type</th>
+  <th>Relation</th>
+  <th>etc</th>
+  <tr>
+    <td>id</td>
+    <td>uuid</td>
+    <td>pk</td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td>email</td>
+    <td>varchar</td>
+    <td>unique</td>
+    <td>이메일</td>
+  </tr>
+
+  <tr>
+    <td>password</td>
+    <td>string</td>
+    <td></td>
+    <td>hash암호화된 비밀번호</td>
+  </tr>
+
+  <tr>
+    <td>mobile</td>
+    <td>number</td>
+    <td>unique</td>
+    <td>전화번호</td>
+  </tr>
+
+  <!-- <tr>
+    <td></td>
+    <td>number</td>
+    <td></td>
+    <td>전화번호</td>
+  </tr> -->
+
+  <tr>
+    <td>created_at</td>
+    <td>datetime</td>
+    <td></td>
+    <td>생성날짜</td>
+  </tr>
+
+  <tr>
+    <td>updated_at</td>
+    <td>datetime</td>
+    <td></td>
+    <td>수정날짜</td>
+  </tr>
+</table>
+
+### account_logs
+
